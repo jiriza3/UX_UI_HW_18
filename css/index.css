@@ -114,7 +114,7 @@ p {
 }
 
 .mySkills.title {
-  text-align: center;
+  text-align: left;
 }
 
 .skillsRow{
@@ -177,4 +177,13 @@ footer {
   margin-left: auto;
   
 
+}
+
+@media only screen and (max-width: 600){
+  .skillsRow{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+  }
 }
