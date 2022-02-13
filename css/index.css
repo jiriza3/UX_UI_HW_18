@@ -50,14 +50,17 @@ p {
 
 }
 
-
-/* Jumbotron copy */
 .jumboCopy {
   width: 70%;
   min-width: 500px;
   max-width: 700px;
   color: white;
   align-self: center;
+  text-align: center;
+}
+
+.smallMePhoto {
+  display: none;
 }
 
 
@@ -114,7 +117,7 @@ p {
 }
 
 .mySkills.title {
-  text-align: left;
+  text-align: center;
 }
 
 .skillsRow{
@@ -179,11 +182,76 @@ footer {
 
 }
 
-@media only screen and (max-width: 600){
-  .skillsRow{
+@media only screen and (max-width: 600px){
+  .skillsRow { 
     padding-top: 30px;
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+      
+    }
+
+  .projectContent {
+    padding-top: 30px;
   }
+  .singleWork {
+    display: flex;
+    background-color: #21a0a0;
+    padding: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    }
+
+    .projectImage {
+      padding-right: 0px;
+    }
+
+    /* Jumbotron  */
+
+
+    .profileBackground {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .jumbotron {
+      background-image: none;
+      background-color: #21a0a0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      flex-direction: column;
+      padding-top: 100px;
+      justify-content: center;
+    }
+    
+    /* Jumbotron copy */
+    .jumboCopy {
+      width: 100%;
+      min-width: 500px;
+      max-width: 700px;
+      color: white;
+      align-self: center;
+    }
+
+    .display-4, .subCategories {
+      text-align: center;
+    }
+    
+    .lead {
+      text-align: center;
+    }
+    
+    .smallMePhoto{
+      display:flex;
+      height: 50%;
+      width: 50%;
+      border-radius: 50px;
+      align-self: center;
+    }
+
+
 }
+  
